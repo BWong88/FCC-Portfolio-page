@@ -37,7 +37,12 @@ body {
 }
 
 
-
+#image{
+  display: block;
+  margin: auto;
+  height: auto;
+  max-width: 100%;
+}
 
 li {
   display: inline;
