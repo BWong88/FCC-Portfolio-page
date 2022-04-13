@@ -5,8 +5,16 @@ html {
   line-height: 1vw;
   scroll-behavior: smooth;
   width: 100vw;
+
 }
 
+
+
+html,body{
+  margin: 0;
+  padding: 0;
+  overflow-x:hidden;
+  }
 
 /* grid-area: horizontal line to start at / vertical line to start at / horizontal line to end at / vertical line to end at; */
 
