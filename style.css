@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+
+html {
+  font-size: 1vw;
+  line-height: 1vw;
+  scroll-behavior: smooth;
+  width: 100vw;
+}
+
+
+/* grid-area: horizontal line to start at / vertical line to start at / horizontal line to end at / vertical line to end at; */
+
+
+
+p {
+  font-size: 1vw;
+}
+
+body {
+  z-index: 1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8vw;
+  position: relative;
+}
+
+
+
+
+li {
+  display: inline;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  float: right;
+  font-size: 1vw;
+  height: 1vw;
+  border-right: 1px solid #bbb;
+  border-left: 1px solid #bbb;
+}
+
+li:first-child {
+  border-right: none;
+  border-left: none;
+}
+
+.logo {
+  float: left;
+  margin-left: -2vw;
+}
+
+.logo:hover {
+  color: coral;
+}
+
+#navbar {
+  position: fixed;
+  top: 0vw;
+  width: 100vw;
+  background: white;
+  z-index: 2;
+}
+
+
+
+ul {
+  list-style-type: none;
+
+}
+
+.navlinks {
+  text-decoration: none;
+  color: black;
+
+
+
+}
+
+.navlinks:hover {
+  text-decoration: underline;
+  text-decoration-color: coral;
+  text-underline-offset: 0.5vw;
+  font-weight: bold;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.Contactcard {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 40%;
+  left: -7vw;
+  width: 7vw;
+  /* border: 5px solid coral; */
+  border-radius: 10%;
+  padding-bottom: 2vw;
+  background: coral;
+  line-height: 1.5vw;
+  transform: scale(1);
+  padding-right: 3vw;
+
+}
+
+
+
+
+.Contactcard:hover {
+  left: 0vw;
+  padding-right: 0vw;
+
+}
+
+.input {
+  font-size: 0.8vw;
+  color: black;
+  width: 0.5vw;
+
+}
+
+
+.input:hover {
+  color: coral;
+}
+
+@media (max-width: 1200px) {
+  li {
+    padding: 2vw;
+    font-size: 1.5vw;
+  }
+
+  li:last-child {
+    border-right: none;
+  }
+
+  ul {
+    float: left;
+    text-align: center;
+  }
+
+  #navbar {
+    background-color: white;
+    border-bottom: 5px solid coral;
+    text-decoration: none;
+  }
+
+  .Contactcard p {
+    font-size: 1vw;
+  }
+
+  .Contactcard {
+    text-align: center;
+  }
+
+  .Contactcard:hover {
+    left: 1.5vw;
+  }
+}
+
+/* vertically stack and center nav links */
+@media (max-width: 700px) {
+  li {
+    font-size: 2.5vw;
+
+  }
+
+  #navbar {
+    background-color: white;
+    border-bottom: 5px solid coral;
+    text-decoration: none;
+  }
+
+
+  .Contactcard {
+  display: none;
+    
+  }
+
+
+
+}
+
+
+
+/* stylling for About section */
+
+#welcome-section {
+  position: relative;
+  height: auto;
+  width: 100vw;
+  line-height: 1vh;
+  text-align: center;
+}
+
+
+.profilesection {
+  display: grid;
+  grid-template-areas:
+    "profiledescription profileimage"
+    "scroll scroll"
+    "footer footer";
+  grid-template-columns: 1fr fr;
+  grid-template-rows: 1fr auto auto;
+  grid-column-gap: 1vw;
+  padding: 10vw 0;
+  margin: auto;
+  position: relative;
+}
+
+
+.profiledescription {
+  grid-area: profiledescription;
+  line-height: 1vw;
+  padding: 25% 0;
+  text-align: right;
+  /* background-color: pink; */
+  width: 50vw;
+
+}
+
+.profileimage {
+  grid-area: profileimage;
+  width: 50vw;
+  vertical-align: baseline;
+  /* background-color: pink; */
+
+}
+
+
+#scroll {
+  margin-left: 50;
+}
+
+#scroll img {
+  width: 5vw;
+}
+
+h1 {
+  font-size: 5vw;
+  font-weight: bold;
+  animation-name: fade;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  font-family: Grape Nuts, cursive;
+  color: coral;
+}
+
+h2 {
+  padding-top: 5vw;
+}
+
+@keyframes fade {
+
+  /* distribute times evenly */
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+footer {
+  line-height: 2vw;
+}
+
+.profile-link {
+  color: coral;
+}
+
+
+
+/* start of media query */
+
+@media (max-width: 1200px) {
+
+  h1 {
+    transform: scale(1);
+    text-shadow: 0;
+    line-height: 3vw;
+  }
+
+  h2 {
+    transform: scale(2);
+  }
+
+  p {
+    font-size: 2vw;
+  }
+
+ 
+  .profilesection {
+    display: flex;
+    flex-direction:column;
+    position: relative;
+    height: 50vh;
+  }
+
+  .profiledescription {
+    line-height: 3vw;
+    width: 150%;
+    height: auto;
+    position: absolute;
+    top: 5%;
+    right: 0vw;
+    text-align: center;
+  }
+
+  footer {
+    font-size: 1.2vw;
+    height: 5vw;
+    text-align: center;
+
+  }
+
+  div>img {
+    transform: scale(0.65);
+  }
+
+  .profileimage {
+    position: absolute;
+    top: 20%;
+    right: 0vw;
+  }
+
+}
+
+
+
+
+
+@media (max-width: 700px) {
+  h1 {
+    transform: scale(1);
+    text-shadow: 0;
+    line-height: 3vw;
+  }
+
+  h2 {
+    transform: scale(3);
+  }
+
+
+
+  .profilesection {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 55vh;
+  }
+
+
+  .profiledescription {
+    line-height: 3vw;
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    right: 25vw;
+    text-align: center;
+
+  }
+
+
+  div>img {
+    transform: scale(0.5);
+  }
+
+
+  .profileimage {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+  }
+
+
+}
+
+/* End of media query */
+
+
+
+.credits {
+  grid-area: footer;
+  padding: 2vw;
+  text-align: center;
+  line-height: 1vw;
+  border-bottom: 5px solid coral;
+  width: 100%;
+
+}
+
+
+/*  styling for Projects section                                                                                         */
+
+
+#projectsection {
+  height: auto;
+  width: 100vw;
+}
+
+#projects {
+  display: grid;
+  width: 70%;
+  height: 75vh;
+  overflow-x: scroll;
+  margin: auto;
+  font-size: 2vw;
+  grid-template-areas:
+    "project1 project2 project3 project4";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  padding-right: 5vw;
+}
+
+
+.project1 {
+  grid-area: project1;
+
+}
+
+
+.project2 {
+  grid-area: project2;
+}
+
+
+.project3 {
+  grid-area: project3;
+
+}
+
+.project4 {
+  grid-area: project4;
+}
+
+
+
+.project-tile {
+  height: 32vw;
+  width: 30vw;
+  margin: auto;
+  border-radius: 10px;
+  border: 5px solid black;
+  background-color: white;
+  box-shadow: 12px 10px lightblue;
+  transform: scale(0.7);
+  opacity: 0.6;
+
+}
+
+.projectimage {
+  display: block;
+  width: 30vw;
+  height: 32vw;
+}
+
+.project-tile:hover {
+  opacity: 1;
+}
+
+.description {
+  text-align: center;
+  padding: 2vw 0;
+
+}
+
+
+@media (max-width: 1200px) {
+  .project-tile {
+    height: 60vh;
+    width: 50vw;
+    margin: auto;
+  }
+
+  .projectimage {
+    display: block;
+    width: 100%;
+    height: 60vh;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+  .project-tile {
+    height: 60vh;
+    width: 80vw;
+    ;
+    margin: auto;
+  }
+
+  .projectimage {
+    display: block;
+    width: 100%;
+    height: 60vh;
+  }
+}
+
+/* Styling for Contact page */
+
+#Contact {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+}
+
+.sidediv,
+.surveycontainer {
+  margin-top: 5vw;
+  margin-bottom: 10vw;
+}
+
+
+/* height set to auto so it resizes responsively */
+.sidediv {
+  position: relative;
+  width: 10vw;
+  background-color: coral;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: auto;
+
+
+}
+
+
+.sidetext {
+  position: absolute;
+  writing-mode: vertical-rl;
+  font-size: 5vw;
+  text-orientation: mixed;
+  left: 2vw;
+  top: 2vw;
+  font-weight: bolder;
+}
+
+
+
+.surveycontainer {
+  width: 30vw;
+  background-color: white;
+  border: 5px dotted rgba(216, 183, 183, 0.918);
+  height: auto;
+  line-height: 4vh;
+  font-weight: bold;
+  padding-top: 3vh;
+  padding-bottom: 10vh;
+
+}
+
+
+#name {
+  padding: 0.4vw;
+  margin-bottom: 2vw;
+  width: 95%;
+  box-sizing: border-box;
+  margin-left: 1vw;
+}
+
+#email {
+  padding: 0.4vw;
+  margin-bottom: 2vw;
+  width: 95%;
+  box-sizing: border-box;
+  margin-left: 1vw;
+}
+
+
+textarea {
+  resize: none;
+  width: 95%;
+  height: 150px;
+  box-sizing: border-box;
+  margin-left: 1vw;
+  border-color: coral
+}
+
+
+label {
+  margin-left: 1vw;
+  font-size: 1vw;
+
+}
+
+input {
+  border-color: coral;
+}
+
+#submit {
+  margin-left: 1vw;
+  width: 95%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+  label {
+    font-size: 2vw;
+  }
+
+
+  @media (max-width: 800px) {
+    .surveycontainer {
+      width: 50vw;
+    }
+
+    .sidediv {
+      width: 15vw;
+    }
+
+    label {
+      font-size: 3vw;}}
+    }

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FCC Personal Portfolio page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+  <!-- nav bar -->
+  <div id="navbar">
+    <nav>
+      <ul>
+        <li class="logo"><strong>BarbaraWong</strong></li>
+        <li><a class="navlinks" href="#Contact">Contact</a></li>
+        <li><a class="navlinks" href="#projects">Projects</a></li>
+        <li><a class="navlinks" href="#welcome-section">About</a></li>
+
+
+      </ul>
+    </nav>
+  </div>
+
+  <!-- About section -->
+  <div id="welcome-section">
+
+    <div class="profilesection">
+
+      <div class="profiledescription">
+        <h1>Barbara Wong</h1>
+        <p>Aspiring Web Developer</p>
+        <p><code> HTML </code>| <code> CSS </code></p>
+      </div>
+
+      <div class="profileimage"> <img
+          src="https://cdni.iconscout.com/illustration/free/thumb/developer-2080968-1750498.png" alt="developerlogo">
+      </div>
+
+    </div>
+
+    <div id="scroll"><a href="#projects"><img
+      src="https://cdn.iconscout.com/icon/free/png-256/down-arrow-1767499-1502567.png" alt="sroll-logo"></a></div>
+  </div>
+
+
+
+  <form action="mailto:Barbarawong88@gmail.com" class="Contactcard">
+    <div class="cardtext">
+      <p>Let's work <br> together!</p>
+      <input type="submit" value="Contact Me">
+    </div>
+  </form>
+
+
+
+
+  <footer class="credits1 credits">
+    <div> &copy; 2022 All rights reserved. – Coded by <a href="https://www.freecodecamp.org/BarbWong" target="_blank">
+        <span class="profile-link"> Barbara Wong</span>
+      </a></div>
+
+    <div><a href="https://iconscout.com/illustrations/developer" target="_blank">Developer Illustration</a> by <a
+        href="https://iconscout.com/contributors/manypixels-gallery" target="_blank">Manypixels Gallery</a>
+      <a href="https://iconscout.com/icons/down-arrow" target="_blank">Down Arrow Icon</a> by <a
+        href="https://iconscout.com/contributors/eva-icons">Akveo</a> on <a href="https://iconscout.com">Iconscout</a>
+    </div>
+  </footer>
+
+
+
+  <!-- Projects section  start-->
+
+
+
+  <div id="projectsection">
+    <h2
+      style="color:coral;font-size:2vw;text-align: center; text-decoration: underline;text-underline-offset: 0.5vw;  text-decoration-color: rgb(75, 196, 233);"
+      class="projectintro">Projects</h2>
+
+
+    <div id="projects">
+
+      <div class="project-tile">
+        <div class="project1">
+          <a href="https://codepen.io/bwong88/pen/eYeyNEG" target="_blank"><img class="projectimage" style="width:100%;"
+              src="https://github.com/BWong88/FreeCodeCamp-projects/blob/main/Dori1.jpg?raw=true" alt="Project1"></a>
+        </div>
+        <div class="description">
+          <a href=" https://codepen.io/bwong88/pen/eYeyNEG" target="_blank">Tribute page</a>
+        </div>
+      </div>
+
+
+      <div class="project-tile">
+        <div class="project2">
+          <a href="https://codepen.io/bwong88/pen/gOXJaMq" target="_blank"><img class="projectimage" style="width:100%;"
+              src="Images\SurveyFormImage.png" alt="Project2"></a>
+        </div>
+        <div class="description">
+          <a href="https://codepen.io/bwong88/pen/gOXJaMq" target="_blank">Survey form</a>
+        </div>
+      </div>
+
+      <div class="project-tile">
+        <div class="project3">
+          <!-- <video style="margin:auto;width:100%;background:black;"><source src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/VH-Spjq/videoblocks-metagirl01649590_sb8rjo00f__c1a847fa646a126fc945ba8f35cf28bf__P360.mp4" type="video/mp4">   -->
+          <!-- </video> -->
+          <a href="https://codepen.io/bwong88/pen/NWwQWKO" target="_blank"><img class="projectimage" style="width:100%;"
+              src="Images\Productpage.png" alt="Project3"></a>
+        </div>
+        <div class="description">
+          <a href="https://codepen.io/bwong88/pen/NWwQWKO" target="_blank">Product page</a>
+        </div>
+      </div>
+
+      <div class="project-tile">
+        <div class="project4">
+          <a href="https://codepen.io/bwong88/pen/ZEvpgwa" target="_blank"><img class="projectimage"
+              src="Images\TechnicalPage.png" alt="Project4"></a>
+        </div>
+        <div class="description">
+          <a href=" https://codepen.io/bwong88/pen/ZEvpgwa" target="_blank">Technical page</a>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="credits2 credits">
+      &copy; 2022 All rights reserved. – Coded by <a id="profile-link" href="https://www.freecodecamp.org/BarbWong"
+        target="_blank">
+        <span class="profile-link">Barbara Wong</span></a><br>
+    </footer>
+
+
+    <!-- Projects section end -->
+
+    <div id="Contact">
+
+
+
+      <div class="sidediv">
+        <div class="sidetext">Contact Me</div>
+      </div>
+
+      <form class="surveycontainer">
+
+        <div>
+          <label class="label" for="name" id="name-label">Name</label>
+        </div>
+        <div><input id="name" placeholder="Enter your name" type="text" required name="name">
+        </div>
+
+
+        <div>
+          <label class="label" for="email" id="email-label">Email</label>
+        </div>
+        <div><input id="email" type="email" placeholder="Enter your email" required name="email">
+        </div>
+
+
+        <div class="comments">
+          <label class="label" for="comment"> Comment </label>
+        </div>
+        <div><textarea id="comment" name="comment"> </textarea>
+        </div>
+
+        <div>
+          <button id="submit"> Submit </button>
+        </div>
+
+      </form>
+
+    </div>
+
+    <footer class="credits">
+      &copy; 2022 All rights reserved. – Coded by <a id="profile-link" href="https://www.freecodecamp.org/BarbWong"
+        target="_blank">
+        <span class="profile-link">Barbara Wong</span></a><br>
+    </footer>
+
+
+</body>
+
+</html>
