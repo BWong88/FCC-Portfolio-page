@@ -469,39 +469,10 @@ footer {
 }
 
 #projects {
-  display: grid;
-  width: 70%;
-  height: 100vh;
-overflow-x: scroll; 
-  margin: auto;
-  font-size: 2vw;
-  grid-template-areas:
-    "project1 project2 project3 project4";
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
- 
-}
-
-
-.project1 {
-  grid-area: project1;
-
-}
-
-
-.project2 {
-  grid-area: project2;
-}
-
-
-.project3 {
-  grid-area: project3;
-
-}
-
-.project4 {
-  grid-area: project4;
-}
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ }
 
 
 .project-tile {
